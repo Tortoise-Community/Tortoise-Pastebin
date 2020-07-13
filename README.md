@@ -20,6 +20,21 @@ to do things like:
 which will output a URL to share containing the contents of `cat something`'s
 STDOUT.  Check the README there for more details and usages.
 
+## Tortoise Community
+
+This repository was modified to suit the needs of Tortoise Community.
+
+Some notes:
+
+We're using postqres but the database url is not defined in config.json.
+In that case it's loaded from enviroment variable.
+
+You need to create `.env` file in the project root directory and add key `DATABASE_URL="postgres://user:password@host:port/database_name"`
+
+When running if you get error about unique contraint key check you can ignore as it is ignored by the code internally but still logged..
+
+Also if you keep getting auth_failed even tho you're sure your databas url is correct then downgrade postgres adapter with `npm install pg@6`
+
 ## Tested Browsers
 
 * Firefox 8
