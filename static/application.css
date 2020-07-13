@@ -1,5 +1,5 @@
 body {
-	background: #002B36;
+	background: #0a0a0a;
 	padding: 20px 50px;
 	margin: 0px;
 }
@@ -62,26 +62,26 @@ textarea {
 #box1 {
 	padding: 5px;
 	text-align: center;
-	background: #00222b;
+	background: #0a0a0a;
 }
 
 #box2 {
-	background: #08323c;
+	background: #0a0a0a;
 	font-size: 0px;
 	padding: 0px 5px;
 }
 
 #box1 a.logo, #box1 a.logo:visited {
 	display: inline-block;
-	background: url(logo.png);
-	width: 126px;
-	height: 42px;
+	background: url('https://cdn.discordapp.com/attachments/692851221223964822/732319781742706698/tort_final_long_no_mirror_fuk.png');
+	width: 305px;
+	height: 50px;
 }
 
-#box1 a.logo:hover {
+/*#box1 a.logo:hover {
 	background-position: 0 bottom;
 }
-
+*/
 #box2 .function {
 	background: url(function-icons.png);
 	width: 32px;
@@ -112,7 +112,7 @@ textarea {
 }
 
 #box3, #messages li {
-	background: #173e48;
+	background: #ffb101;
 	font-family: Helvetica, sans-serif;
 	font-size: 12px;
 	line-height: 14px;
@@ -120,12 +120,12 @@ textarea {
 }
 
 #box3 .label, #messages li {
-	color: #fff;
+	color: #000;
 	font-weight: bold;
 }
 
 #box3 .shortcut {
-	color: #c4dce3;
+	color: #1a1a1a;
 	font-weight: normal;
 }
 
@@ -160,7 +160,7 @@ textarea {
 }
 
 #messages li {
-	background:rgba(23,62,72,0.8);
+	background:rgba(10, 10, 10, 1);
 	margin:0 auto;
 	list-style:none;
 }
@@ -169,3 +169,10 @@ textarea {
 	background:rgba(102,8,0,0.8);
 }
 
+.join
+{
+	border: none;
+	color: white;
+	background: #7289da;
+	padding: 4px 6px !important;
+}

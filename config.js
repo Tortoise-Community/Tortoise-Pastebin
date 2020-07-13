@@ -1,7 +1,7 @@
 {
 
-  "host": "0.0.0.0",
-  "port": 7777,
+  "host": "127.0.0.1",
+  "port": 1111,
 
   "keyLength": 10,
 
@@ -33,10 +33,10 @@
   },
 
   "storage": {
-    "type": "memcached",
-    "host": "127.0.0.1",
-    "port": 11211,
-    "expire": 2592000
+
+  "path": "./data",
+  "type": "file"
+
   },
 
   "documents": {
