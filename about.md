@@ -22,8 +22,10 @@ They may be removed earlier and without notice.
 
 ## Privacy
 
+While the contents of hastebin.com are not directly crawled by any search robot
+that obeys "robots.txt", there should be no great expectation of privacy.
 Post things at your own risk.
-Not responsible for any loss of data or removed pastes.
+We are not responsible for any loss of data or removed pastes.
 
 ## Open Source
 
