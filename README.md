@@ -29,7 +29,7 @@ STDOUT.  Check the README there for more details and usages.
 ## Installation
 
 1.  Download the package, and expand it
-2.  Explore the settings inside of config.js, but the defaults should be good
+2.  Explore the settings inside of config.json, but the defaults should be good
 3.  `npm install`
 4.  `npm start`
 
@@ -87,7 +87,7 @@ for the key.
 
 ### File
 
-To use file storage (the default) change the storage section in `config.js` to
+To use file storage (the default) change the storage section in `config.json` to
 something like:
 
 ``` json
