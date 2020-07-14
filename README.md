@@ -255,6 +255,8 @@ your bucket:
 
 John Crepezzi <john.crepezzi@gmail.com>
 
+Modified to work with Tortoise Community by its staff.
+
 ## License
 
 (The MIT License)
