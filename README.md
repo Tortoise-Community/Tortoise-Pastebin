@@ -29,9 +29,11 @@ Some notes:
 We're using postqres but the database url is not defined in config.json.
 In that case it's loaded from enviroment variable.
 
-You need to create `.env` file in the project root directory and add key `DATABASE_URL="postgres://user:password@host:port/database_name"`
+You need to create `.env` file in the project root directory and add these keys:
 
-When running if you get error about unique contraint key check you can ignore as it is ignored by the code internally but still logged..
+`DATABASE_URL="postgres://user:password@host:port/database_name"`
+
+`PORT=XXXX` this is the port on which the paste server is served.
 
 Also if you keep getting auth_failed even tho you're sure your databas url is correct then downgrade postgres adapter with `npm install pg@6`
 
@@ -254,6 +256,8 @@ your bucket:
 ## Author
 
 John Crepezzi <john.crepezzi@gmail.com>
+
+Modified to work with Tortoise Community by its staff.
 
 ## License
 
