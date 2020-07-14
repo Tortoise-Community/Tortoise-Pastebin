@@ -264,7 +264,7 @@ haste.prototype.configureButtons = function() {
     {
       $where: $('#box2 .save'),
       label: 'Save',
-      shortcutDescription: 'control + s',
+      shortcutDescription: 'ctrl + s  [Double click to copy link]',
       shortcut: function(evt) {
         return evt.ctrlKey && (evt.keyCode === 83);
       },
@@ -280,7 +280,7 @@ haste.prototype.configureButtons = function() {
       shortcut: function(evt) {
         return evt.ctrlKey && evt.keyCode === 78;
       },
-      shortcutDescription: 'control + n',
+      shortcutDescription: 'ctrl + n',
       action: function() {
         _this.newDocument(!_this.doc.key);
       }
@@ -291,7 +291,7 @@ haste.prototype.configureButtons = function() {
       shortcut: function(evt) {
         return _this.doc.locked && evt.ctrlKey && evt.keyCode === 68;
       },
-      shortcutDescription: 'control + d',
+      shortcutDescription: 'ctrl + d',
       action: function() {
         _this.duplicateDocument();
       }
@@ -302,20 +302,20 @@ haste.prototype.configureButtons = function() {
       shortcut: function(evt) {
         return evt.ctrlKey && evt.shiftKey && evt.keyCode === 82;
       },
-      shortcutDescription: 'control + shift + r',
+      shortcutDescription: 'ctrl + shift + r',
       action: function() {
         window.location.href = '/raw/' + _this.doc.key;
       }
     },
     {
       $where: $('#box2 .twitter'),
-      label: 'Twitter',
+      label: 'Discord Server',
       shortcut: function(evt) {
-        return _this.options.twitter && _this.doc.locked && evt.shiftKey && evt.ctrlKey && evt.keyCode == 84;
+        return _this.options.twitter && _this.doc.locked && evt.shiftKey && evt.ctrlKey && evt.keyCode == 88;
       },
-      shortcutDescription: 'control + shift + t',
+      shortcutDescription: 'Tortoise python community',
       action: function() {
-        window.open('https://twitter.com/share?url=' + encodeURI(window.location.href));
+        window.open('https://discord.gg/6xsaVQN');
       }
     }
   ];
