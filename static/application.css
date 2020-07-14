@@ -185,3 +185,22 @@ textarea {
 	background: #7289da;
 	padding: 4px 6px !important;
 }
+
+footer{
+	background: #1a1a1a;
+	color: #ffb101 !important;
+	position: fixed;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+  	padding: 3px;
+  	text-align: center;
+
+}
+
+footer a{
+	text-decoration: none;
+	color: white;
+	margin: 6px 4px ;
+	}
+
