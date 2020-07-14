@@ -10,7 +10,6 @@
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="highlight.min.js"></script>
 		<script type="text/javascript" src="application.min.js"></script>
-		
 
 		<meta name="robots" content="noindex,nofollow"/>
 
@@ -35,6 +34,16 @@
 				app = new haste('Tortoise: Pastebin', { twitter: true });
 				handlePop({ target: window });
 			});
+
+		 function CopyClip() {
+         var dummy = document.createElement('input'),
+         text = window.location.href;
+         document.body.appendChild(dummy);
+         dummy.value = text;
+         dummy.select();
+         document.execCommand('copy');
+         document.body.removeChild(dummy);  }
+
 		</script>
 
 	</head>
@@ -48,7 +57,7 @@
 				<a href="https://www.tortoisecommunity.com" class="logo"></a>
 			</div>
 			<div id="box2">
-				<button class="save function button-picture">Save</button>
+				<button class="save function button-picture" onclick="CopyClip()">Save</button>
 				<button class="new function button-picture">New</button>
 				<button class="duplicate function button-picture">Duplicate & Edit</button>
 				<button class="raw function button-picture">Just Text</button>
@@ -59,6 +68,7 @@
 				<div class="shortcut"></div>
 			</div>
 		</div>
+
 
 		<div id="linenos" class="unselectable"></div>
 		<pre id="box" style="display:none;" class="hljs" tabindex="0"><code></code></pre>
