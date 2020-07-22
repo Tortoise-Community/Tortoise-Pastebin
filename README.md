@@ -37,12 +37,6 @@ You need to create `.env` file in the project root directory and add these keys:
 
 Also if you keep getting auth_failed even tho you're sure your databas url is correct then downgrade postgres adapter with `npm install pg@6`
 
-## Tested Browsers
-
-* Firefox 8
-* Chrome 17
-* Safari 5.3
-
 ## Installation
 
 1.  Download the package, and expand it
