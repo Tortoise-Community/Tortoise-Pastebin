@@ -1,1 +1,1 @@
-* add feedback for errors to UI - esp. too long
+* add feedback for errors to UI - esp. too lon
