@@ -33,8 +33,6 @@ You need to create `.env` file in the project root directory and add these keys:
 
 `DATABASE_URL="postgres://user:password@host:port/database_name"`
 
-`PORT=XXXX` this is the port on which the paste server is served.
-
 Also if you keep getting auth_failed even tho you're sure your databas url is correct then downgrade postgres adapter with `npm install pg@6`
 
 ## Installation

@@ -1,5 +1,6 @@
 require('dotenv').config()
 var http = require('http');
+var https = require('https');
 var fs = require('fs');
 
 var uglify = require('uglify-js');
@@ -8,6 +9,12 @@ var connect = require('connect');
 var route = require('connect-route');
 var connect_st = require('st');
 var connect_rate_limit = require('connect-ratelimit');
+
+// Load certificates for ssl
+var https_options = {
+  key: fs.readFileSync("/etc/ssl/paste_ssl_pk.pem"),
+  cert: fs.readFileSync('/etc/ssl/paste_ca_origin.crt')
+};
 
 var DocumentHandler = require('./lib/document_handler');
 
@@ -70,6 +77,7 @@ if (config.recompressStaticAssets) {
 }
 
 // Send the static documents into the preferred store, skipping expirations
+
 var path, data;
 for (var name in config.documents) {
   path = config.documents[name];
@@ -151,6 +159,9 @@ app.use(connect_st({
   index: 'index.html'
 }));
 
-http.createServer(app).listen(config.port, config.host);
+// Create an HTTP service.
+http.createServer(app).listen(80, config.host);
+// Create an HTTPS service identical to the HTTP service.
+https.createServer(https_options, app).listen(443, config.host);
 
 winston.info('listening on ' + config.host + ':' + config.port);
