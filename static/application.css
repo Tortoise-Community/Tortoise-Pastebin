@@ -188,7 +188,7 @@ textarea {
 
 footer{
 	background: #1a1a1a;
-	color:white; /*#ffb101 !important; */
+	color:red; /*#ffb101 !important; */
 	position: fixed;
   	left: 0;
   	bottom: 0;
@@ -196,6 +196,9 @@ footer{
   	text-align: center;
   	border-radius: 3px;
   	margin-top: -5px; 
+  	display: block;
+  	cursor: pointer;
+
 }
 
 footer a{
@@ -204,3 +207,9 @@ footer a{
 	margin: 6px 4px ;
 	}
 
+.show, .footer-nav:hover {
+    display: none;
+}
+.block{
+	height: 2000px;
+}
