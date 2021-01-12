@@ -315,7 +315,7 @@ haste.prototype.configureButtons = function() {
       },
       shortcutDescription: 'Tortoise python community',
       action: function() {
-        window.open('https://discord.gg/6xsaVQN');
+        window.open('https://discord.gg/f6VcZC2');
       }
     }
   ];
